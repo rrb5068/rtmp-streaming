@@ -12,7 +12,6 @@ A quick Saturday project using Vagrant / Ansible to provision an Ubuntu 14.04 se
 * Watch the Vagrant and Ansible output fly up your terminal
 * Be patient when you hit the last task (Download sample video to host over RTMP)
 * If all tasks are successful, navigate to http://192.168.50.1:8080/ in your browser
-
 * Watch the stream
 * To remove the VM, run `vagrant -f destroy`
 
