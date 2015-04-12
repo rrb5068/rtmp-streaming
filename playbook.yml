@@ -1,0 +1,8 @@
+---
+- name: Common Tasks
+  hosts: all
+  sudo: true
+  roles:
+    - common
+    - nginx
+    - frontend

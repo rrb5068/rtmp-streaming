@@ -1,0 +1,9 @@
+---
+- name: Create nginx site config
+  template: src=frontend.conf.j2 dest=/etc/nginx/conf.d/frontend.conf
+  notify: 
+   - reload nginx
+
+- name: Synchronize static directory to site root
+  synchronize: src=static/ dest={{ site_root }} rsync_path="sudo rsync"
+  sudo: yes
